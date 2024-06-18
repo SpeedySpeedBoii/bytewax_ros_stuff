@@ -1,0 +1,21 @@
+[tool.pylint.MASTER]
+load-plugins = "pylint_pytest"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = "missing-function-docstring,\n    missing-class-docstring,\n    missing-module-docstring\n    "
+
+[tool.pylint.FORMAT]
+max-line-length = 100
+disable = "fixme"
+
+[tool.mypy]
+strict = "True"
+
+[tool.flake8]
+max-line-length = 100
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
